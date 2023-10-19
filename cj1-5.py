@@ -9,9 +9,7 @@ def main():
     x = np.linspace(0, 2 * np.pi, 1000)
     y = np.sin(x)
     data = Table([x, y], names=["x", "sin(x)"])
-    ascii.write(data, "table.txt", format="commented_header")
-    data_in = ascii.read("table.txt")
-    print(data_in)
+    print(data)
 
 
 if __name__ == "__main__":
